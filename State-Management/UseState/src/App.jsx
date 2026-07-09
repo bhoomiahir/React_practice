@@ -8,8 +8,8 @@ function App() {
     <div className="Container">
       <h1>Counter</h1>
       <p>Count is : {Count}</p>
-      <button>increase</button>
-      <button>decrease</button>
+      <button className="btn">increase</button>
+      <button className="btn">decrease</button>
     </div>
   );
 }
