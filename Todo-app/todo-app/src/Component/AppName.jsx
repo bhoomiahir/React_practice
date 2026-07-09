@@ -1,6 +1,6 @@
 function AppName () {
   return (
-    <h1 class="">Todo App</h1>
+    <h1 className="margin">Todo App</h1>
   );
 }
 

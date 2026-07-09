@@ -5,11 +5,11 @@ import "./App.css";
 
 function App() {
   return (
-    <center>
-      <AppName class="margin" style={{ marginBottom: "30px" }}></AppName>
-      <Mainrow class="margin"></Mainrow>
-      <Todoitem class="margin"></Todoitem>
-    </center>
+    <div className="container">
+      <AppName className="margin" />
+      <Mainrow className="margin" />
+      <Todoitem className="margin" />
+    </div>
   );
 }
 
