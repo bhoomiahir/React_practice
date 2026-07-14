@@ -1,4 +1,4 @@
-function Mainrow() {
+function Addtodo({ handleAdd }) {
   return (
     <div className="row">
       <div className="col-6">
@@ -8,7 +8,11 @@ function Mainrow() {
         <input type="date" />
       </div>
       <div className="col-2">
-        <button type="button" className="btn btn-success btn">
+        <button
+          type="button"
+          className="btn btn-success btn"
+          onClick={handleAdd}
+        >
           Add
         </button>
       </div>
@@ -16,4 +20,4 @@ function Mainrow() {
   );
 }
 
-export default Mainrow;
+export default Addtodo;
