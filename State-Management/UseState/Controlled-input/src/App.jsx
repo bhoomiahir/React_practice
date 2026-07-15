@@ -3,15 +3,10 @@ import "./App.css";
 
 function App() {
   const [charcount, setCharcount] = useState(0);
-
-  const charLength = (eve) => {
-    setCharcount(eve.target.value.length);
-  };
-
   const [preview, setPreview] = useState("");
 
-  const handlepreview = (eve) => {
-    console.log(eve.target.value.length);
+  const handleinput = (eve) => {
+    setCharcount(eve.target.value.length);
     setPreview(eve.target.value);
   };
 
@@ -21,7 +16,7 @@ function App() {
         <input
           type="text"
           placeholder="type something..."
-          onChange={charLength}
+          onChange={handleinput}
         />
         <p>character count is : {charcount}</p>
         <div>
