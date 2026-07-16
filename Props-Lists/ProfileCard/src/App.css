@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-card {
+  margin: 20px;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: 250px;
+  margin: 5px;
+}
+
+h2 {
+  font-size:30px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
