@@ -2,11 +2,9 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [charcount, setCharcount] = useState(0);
   const [preview, setPreview] = useState("");
 
   const handleinput = (eve) => {
-    setCharcount(eve.target.value.length);
     setPreview(eve.target.value);
   };
 
@@ -18,7 +16,7 @@ function App() {
           placeholder="type something..."
           onChange={handleinput}
         />
-        <p>character count is : {charcount}</p>
+        <p>character count is : {preview.length}</p>
         <div>
           <p>Live preview of Input: {preview}</p>
         </div>

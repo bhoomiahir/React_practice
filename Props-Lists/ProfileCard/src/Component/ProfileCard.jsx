@@ -1,4 +1,4 @@
-function Profilecard({ profile }) {
+function Profilecard({ profile}) {
   console.log(profile);
   return (
     <div className="profile-card">

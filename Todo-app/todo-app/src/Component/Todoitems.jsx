@@ -3,8 +3,8 @@ import Todoitem from "./Todoitem";
 function Todoitems({ todoitems }) {
   return (
     <>
-      {todoitems.map((items) => {
-        <Todoitem todoitem={items.name} tododate={items.date}></Todoitem>;
+      {todoitems.map((item) => {
+        return <Todoitem todoitem={item.name} tododate={item.date}></Todoitem>;
       })}
     </>
   );
