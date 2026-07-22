@@ -1,15 +1,16 @@
-function ProductList(products) {
+function ProductList({ products }) {
   return (
-    <div>
+    <>
       <h1>Products List:</h1>
-      {products.map((product) => {
-        return (
-          <div>
-            <p>{product}</p>
-          </div>
-        );
-      })}
-    </div>
+      <div className="products">
+        {/* {imgs.map((img) => {
+          <img src={img} alt="productPic"></img>;
+        })} */}
+        {products.map((product) => {
+          return <p>{product}</p>;
+        })}
+      </div>
+    </>
   );
 }
 
