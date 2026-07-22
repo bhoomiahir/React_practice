@@ -1,6 +1,6 @@
-.products {
+.container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 p {
@@ -8,7 +8,7 @@ p {
 }
 
 img {
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   border-radius: 20%;
 }

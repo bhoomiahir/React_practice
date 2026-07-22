@@ -1,5 +1,6 @@
 import "./App.css";
 import ProductList from "./components/ProductList";
+import ProductImg from "./components/ProductImg";
 
 function App() {
   const products = ["Biscuits", "Chocolate", "Chips", "Chaas", "Cold Coffee"];
@@ -11,8 +12,9 @@ function App() {
     "https://frostingandfettuccine.com/wp-content/uploads/2022/12/Caramel-Iced-Coffee-6.jpg",
   ];
   return (
-    <div>
-      <ProductList products={products} imgs={productImg} />
+    <div className="container">
+      <ProductImg imgs={productImg} />
+      <ProductList products={products} />
     </div>
   );
 }
